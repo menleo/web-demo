@@ -1,0 +1,20 @@
+.a-right-text {
+    position: fixed;
+    font-weight: bold;
+    /* 颜色渐变 */
+    color: transparent;
+    background: linear-gradient(to right, red, orange, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.move-up {
+    animation: 0.5s linear 0s 1 normal forwards moveUp;
+}
+
+@keyframes moveUp {
+    to {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
